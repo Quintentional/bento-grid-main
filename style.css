@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 3%, 94%);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    border-radius: 10px;
+}
+
+.layout {
+    width: 80%;
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 20rem  3.5rem 10rem 15rem;
+    grid-template-columns: 16rem 16.25rem 16.25rem 16rem;
+    grid-template-areas: 
+    'create social social schedule'
+    'create manage maintain schedule'
+    'write manage maintain schedule'
+    'write faster grow grow';
+    gap: 2rem;
+}
+
+.layout > * {
+    display: grid;
+}
+
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-weight: 500;
+    margin: 4rem 0 1.5rem 0
+}
+
+h1 span {
+    color: hsl(39, 100%, 71%);
+}
+
+h2 {
+    font-size:40px;
+    font-weight: 550;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: 550;
+}
+
+.social {
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 3.5rem;
+    grid-area: social;
+}
+
+.social img {
+    width: 200px;
+}
+
+.social p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+
+.manage {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: manage;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.manage h3 {
+    letter-spacing: -1.5px;
+    line-height: 1.8rem;
+    width:13rem;
+}
+
+.manage img {
+    width: 310px;
+    margin: 1.5rem 0 1.5rem 7rem;
+}
+
+.maintain {
+    background-color: hsl(39, 100%, 71%);
+    grid-area: maintain;
+    overflow: hidden;
+}
+
+.maintain h3{
+    letter-spacing: -2px;
+    line-height: 1.8rem;
+    width:13rem;
+    margin: 1.5rem 0 1rem 1.5rem
+}
+
+.maintain img{
+    width: 210px;
+    margin-left: 1.5rem;
+}
+
+.schedule {
+    background-color: hsl(254, 88%, 90%);
+    grid-area: schedule;
+    overflow: hidden;
+}
+
+.schedule h3 {
+    width: 15rem;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    line-height: 1.8rem;
+    margin: 2.5rem 0 -1.5rem 2rem;
+}
+
+.schedule img {
+    width: 370px;
+    height: auto;
+    margin-left: 2rem;
+    margin-bottom: -1rem;
+}
+
+.schedule p {
+    width: 13rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    margin-left: 2rem;
+}
+
+.grow {
+    background-color: hsl(256, 67%, 59%);
+    grid-area: grow;
+    display: flex;
+    align-items: center;
+}
+
+.grow img {
+    width: 250px;
+    height: 200px;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+.grow h2 {
+    color: hsl(0, 0%, 100%);
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+.faster {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: faster;
+}
+
+.faster h2 {
+    font-size: 60px;
+    margin: .75rem 0 -2rem 1rem;
+}
+
+.faster p {
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.faster img {
+    width: 180px;
+    margin-left: 1.5rem;
+}
+
+.create {
+    background-color: hsl(31, 66%, 93%);
+    grid-area: create;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create h2 {
+    width: 13rem;
+    line-height: 2.5rem;
+    letter-spacing: -2px;
+    margin: 4.5rem 0 1.5rem 1rem
+}
+
+.create span {
+    color: hsl(256, 67%, 59%)
+}
+
+.create img {
+    width: 190px
+}
+
+.write {
+    background-color: hsl(39, 100%, 71%);
+    grid-area: write;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write h2 {
+    width: 13rem;
+    line-height: 2.5rem;
+    letter-spacing: -2px;
+    margin: 1.5rem 0 2.5rem 1rem
+}
+
+.write img {
+    width: 220px;
+}
+
